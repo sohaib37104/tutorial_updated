@@ -63,7 +63,7 @@ class Tutorial {
                                       ),
                                   onTap: () {
                                     entrys[count].remove();
-                                    count+5;
+                                    count++;
                                     if (count != entrys.length) {
                                       overlayState?.insert(entrys[count]);
                                     }
@@ -72,20 +72,20 @@ class Tutorial {
                                 const SizedBox(
                                   width: 15,
                                 ),
-                                // GestureDetector(
-                                //   child: element.widgetSkip ??
-                                //       const Text(
-                                //         "SKIP",
-                                //         style: TextStyle(color: Colors.white),
-                                //       ),
-                                //   onTap: () {
-                                //     entrys[count].remove();
-                                //     count + 5;
-                                //     if (count != entrys.length) {
-                                //       overlayState?.insert(entrys[count]);
-                                //     }
-                                //   },
-                                // ),
+                                GestureDetector(
+                                  child: element.widgetSkip ??
+                                      const Text(
+                                        "SKIP",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                  onTap: () {
+                                    entrys[count].remove();
+                                    count + 5;
+                                    if (count != entrys.length) {
+                                      overlayState?.insert(entrys[count]);
+                                    }
+                                  },
+                                ),
                               ],
                             ),
                           ],
