@@ -69,6 +69,9 @@ class Tutorial {
                                     }
                                   },
                                 ),
+                                const SizedBox(
+                                  width: 15,
+                                ),
                                 GestureDetector(
                                   child: element.widgetSkip ??
                                       const Text(
@@ -77,7 +80,7 @@ class Tutorial {
                                       ),
                                   onTap: () {
                                     entrys[count].remove();
-                                    count + entrys.length - 1;
+                                    count + 5;
                                     if (count != entrys.length) {
                                       overlayState?.insert(entrys[count]);
                                     }
